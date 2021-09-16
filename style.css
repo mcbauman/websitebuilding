@@ -1,0 +1,152 @@
+:root{
+    --color1:darkred;
+    --textcolor1:white;
+
+}
+
+body{
+    
+}
+
+/* ----------------------
+-------------------------
+HEADER
+-------------------------
+------------------------- */
+
+header{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top:0
+}
+
+/* ----------------------
+-------------------------
+NAV
+-------------------------
+------------------------- */
+nav{
+    width: 25%;
+    height: 80vh;
+    background-color: var(--color1);
+    color: var(--textcolor1);
+    position: fixed;
+    top:10vh;
+}
+
+/* ----------------------
+-------------------------
+MAIN HTML
+-------------------------
+------------------------- */
+
+main{
+    width: 70%;
+    position: absolute;
+    top:50px;
+    left:28vw;
+}
+
+/* ----------------------
+HTML-STRUCTURE
+------------------------- */
+#sructure{
+    text-align: center;
+}
+
+#body{
+    width: 100%;
+    height: 50vh;
+    background-color: darkgrey;
+}
+
+#header{
+    width: 95%;
+    height: 10%;
+    background-color: grey;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#nav{
+    width: 95%;
+    height: 5%;
+    background-color: grey;
+    margin: 5px auto;
+    text-align: center;
+}
+#main{
+    width: 90%;
+    height: 60%;
+    background-color: grey;
+    margin: 5px auto;
+    text-align: center;
+}
+.article{
+    width: 90%;
+    height: 40%;
+    background-color: lightgrey;
+    margin: 5px auto
+}
+.section{
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin: 5px auto
+}
+
+.div{
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin: 5px auto
+}
+
+.span{
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    margin: 5px auto;
+    display:inline;
+}
+
+#aside{
+    width: 90%;
+    height: 10%;
+    background-color: grey;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#footer{
+    width: 90%;
+    height: 10%;
+    background-color: grey;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/* ----------------------
+HTML-ELEMENTS
+------------------------- */
+
+/* ----------------------
+HTML-LINKS
+------------------------- */
+
+/* ----------------------
+HTML-TABLE
+------------------------- */
+
+/* ----------------------
+HTML-FORMS
+------------------------- */
+
+
+/* ----------------------
+-------------------------
+MAIN CSS
+-------------------------
+------------------------- */
+
