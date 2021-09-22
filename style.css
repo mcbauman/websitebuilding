@@ -6,6 +6,9 @@
 
 body{
     margin: 0;
+    background-image: URL("br.jpeg");
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 /* ----------------------
@@ -48,6 +51,19 @@ main{
     position: absolute;
     top:50px;
     left:28vw;
+}
+
+article{
+    background-color: rgba(128, 128, 128, 0.473);
+}
+
+h2{
+    color: var(--color1);
+    border: solid var(--color1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0 0 0 ;
+    
 }
 
 /* ----------------------
