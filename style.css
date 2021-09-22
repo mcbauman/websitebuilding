@@ -12,6 +12,7 @@ body{
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    color:var(--textcolor1)
 }
 
 /* ----------------------
@@ -67,13 +68,14 @@ main{
 }
 
 article{
-    background-color: rgba(155, 155, 155, 0.705);
+    background-color: rgba(87, 79, 72, 0.705);
     border-radius: 10px;
     padding:10px;
     margin: 10px 0;
 }
 
 h2{
+    background-color: var(--textcolor1);
     color: var(--color1);
     border: solid var(--color1);
     border-radius: 10px;
@@ -208,9 +210,9 @@ CSS-FLEX
 /* flex-direction:row (default), row-reverse, column, column-reverse */
 /* flex-wrap:nowrap (default), wrap, wrap-reverse*/
 /* justify-content: flex-start (default), flex-end, center, space-around, space-between */
-/* align-items: belongs to secondary axis */
+/* align-items: belongs to secondary axis within the line*/
 /* align-content: flex-start, flex-end, center, space-between, space-around, space-evenly
-like justify-content but for secondary axis */
+like justify-content but for secondary axis for all lines*/
 
 #flex #secondRow{
     display: flex;
