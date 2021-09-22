@@ -1,14 +1,17 @@
 :root{
-    --color1:darkred;
-    --textcolor1:white;
+    --color1:rgb(75, 40, 24);
+    --textcolor1:rgb(245, 221, 156);
 
 }
 
 body{
     margin: 0;
+    height: 100vh;
     background-image: URL("br.jpeg");
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 /* ----------------------
@@ -21,7 +24,7 @@ header{
     background-color: var(--color1);
     color: var(--textcolor1);
     width: 25%;
-    height: 10vh;
+    height: 13vh;
     position: fixed;
     top:0
 }
@@ -37,7 +40,17 @@ nav{
     background-color: var(--color1);
     color: var(--textcolor1);
     position: fixed;
-    top:10vh;
+    top:13vh;
+}
+
+a{
+    text-decoration: none;
+    color:var(--textcolor1)
+}
+
+li:hover{
+    box-shadow: 0 0 5px black inset;
+    color: rgb(247, 174, 65);
 }
 
 /* ----------------------
@@ -54,7 +67,10 @@ main{
 }
 
 article{
-    background-color: rgba(128, 128, 128, 0.473);
+    background-color: rgba(155, 155, 155, 0.705);
+    border-radius: 10px;
+    padding:10px;
+    margin: 10px 0;
 }
 
 h2{
@@ -69,17 +85,17 @@ h2{
 /* ----------------------
 HTML-STRUCTURE
 ------------------------- */
-#sructure{
+#structure #sructure{
     text-align: center;
 }
 
-#body{
+#structure #body{
     width: 100%;
     height: 50vh;
     background-color: darkgrey;
 }
 
-#header{
+#structure #header{
     width: 95%;
     height: 10%;
     background-color: grey;
@@ -87,41 +103,41 @@ HTML-STRUCTURE
     text-align: center;
 }
 
-#nav{
+#structure #nav{
     width: 95%;
     height: 5%;
     background-color: grey;
     margin: 5px auto;
     text-align: center;
 }
-#main{
+#structure #main{
     width: 90%;
     height: 60%;
     background-color: grey;
     margin: 5px auto;
     text-align: center;
 }
-.article{
+#structure .article{
     width: 90%;
     height: 40%;
     background-color: lightgrey;
     margin: 5px auto
 }
-.section{
+#structure .section{
     width: 90%;
     height: 30%;
     background-color: white;
     margin: 5px auto
 }
 
-.div{
+#structure .div{
     width: 90%;
     height: 30%;
     background-color: white;
     margin: 5px auto
 }
 
-.span{
+#structure .span{
     width: 30%;
     height: 30%;
     background-color: white;
@@ -129,7 +145,7 @@ HTML-STRUCTURE
     display:inline;
 }
 
-#aside{
+#structure #aside{
     width: 90%;
     height: 10%;
     background-color: grey;
@@ -137,7 +153,7 @@ HTML-STRUCTURE
     text-align: center;
 }
 
-#footer{
+#structure #footer{
     width: 90%;
     height: 10%;
     background-color: grey;
@@ -168,3 +184,87 @@ MAIN CSS
 -------------------------
 ------------------------- */
 
+/* ----------------------
+CSS-BASICS
+------------------------- */
+
+/* ----------------------
+CSS-OVERFLOW
+------------------------- */
+
+/* ----------------------
+CSS-POSITIONING
+------------------------- */
+
+/* ----------------------
+CSS-FLEX
+------------------------- */
+
+#flex #firstRow{
+    display: flex;
+    border: rgb(71, 71, 71) solid 5px;
+    flex-wrap: wrap;
+}
+/* flex-direction:row (default), row-reverse, column, column-reverse */
+/* flex-wrap:nowrap (default), wrap, wrap-reverse*/
+/* justify-content: flex-start (default), flex-end, center, space-around, space-between */
+/* align-items: belongs to secondary axis */
+/* align-content: flex-start, flex-end, center, space-between, space-around, space-evenly
+like justify-content but for secondary axis */
+
+#flex #secondRow{
+    display: flex;
+    border: rgb(48, 48, 48) solid 5px;
+    flex-direction: row-reverse;
+}
+
+#flex #thirdRow{
+    display: flex;
+    border: rgb(163, 163, 163) solid 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flex #thirdRow article{
+    width: 50px;
+    height: 50px;
+}
+
+#flex article, h3{
+   width: calc(100%/4);
+   height: 150px;
+   font-weight: normal;
+   font-size: 1.0rem;
+}
+
+#flex h3{
+    background-color: gray;
+    margin: 0;
+}
+
+#flex .art1{
+    background-color: lightcoral;
+}
+
+#flex .art2{
+    background-color: lightsalmon
+}
+
+#flex .art3{
+    background-color: rgb(230, 230, 134)
+}
+
+#flex .art4{
+    background-color: lightgreen;
+}
+#flex .art5{
+    background-color: lightblue;
+}
+
+#flex .art6{
+    background-color: lightpink;
+}
+
+/* ----------------------
+CSS-GRID
+------------------------- */
