@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf53108397.js" crossorigin="anonymous"></script>
     <title>Summery HTML, CSS, JavaScript</title>
 </head>
 <body>
@@ -41,9 +42,11 @@ NAV
                 <li><a href="#positioning">positioning</a></li>
                 <li><a href="#flex">flex</a></li>
                 <li><a href="#grid">grid</a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#toggle">toggle</a></li>
+                <li><a href="#fontAwesome">font Awesome</a></li>
                 </ol>
             </li>
+            <!-- Font Awesome -->
             <li>javaScrip<ol>
                 <li></li>
                 <li></li>
@@ -124,32 +127,45 @@ MAIN HTML TABLE
             <article id="table">
                 <h2>HTML Table</h2>
                 <div class="positioning">
-                    <table>
-                        <tr>
-                            <th>positioning</th>
-                            <th>effect</th>
-                        </tr>
-                        <tr>
-                            <td>static</td>
-                            <td>is the default</td>
-                        </tr>
-                        <tr>
-                            <td>relative</td>
-                            <td>...to original posiiton, leaves Gap at original position</td>
-                        </tr>
-                        <tr>
-                            <td>absolute</td>
-                            <td>...to the latest parent with relative, atleat to the body, leaves no Gap</td>
-                        </tr>
-                        <tr>
-                            <td>fixed</td>
-                            <td>... stayes at his place when scrolling</td>
-                        </tr>
-                        <tr>
-                            <td>sticky</td>
-                            <td>... scrolls to the position and stayes there when scrolling</td>
-                        </tr>
-                    </table>
+                    <section class="left">
+                        <p>
+                            &lt;table&gt;<br>
+                            &lt;thead&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;überschrif&lt;/th&gt;<br>
+                            &lt;th&gt;überschrift&lt;/th&gt;<br>
+                        </p>
+                    </section>
+                    <section class="right">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>überschrift</th>
+                                    <th>überschrift</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.1</td>
+                                    <td>1.2</td>
+                                </tr>
+                                <tr>
+                                    <td>2.1</td>
+                                    <td>2.2</td>
+                                </tr>
+                                <tr>
+                                    <td>3.1</td>
+                                    <td>3.2</td>
+                                </tr>
+                            </tbody>
+                                <tr>
+                                    <td colspan="2">footertext</td>
+                                </tr>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    </section>
                 </div>
             </article>
 <!-- ------------------------------------------------------------
@@ -166,6 +182,44 @@ MAIN HTML FORM
 ------------------------------------------------------------- -->
             <article id="form">
                 <h2>HTML Forms</h2>
+                <form action="">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="" id="name"><br>
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="submit"></label>
+                    <input type="submit" name="submit" id="submit"><br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"><br>
+                    <input type="file" name="" id=""><br>
+                    <input type="radio"><br>
+                    <input type="date"><br>
+                    <input type="checkbox"><br>
+                    <input type="range"><br>
+                    <textarea name="textarea" id="" cols="30" rows="10">zuvor grau</textarea>
+                    <fieldset>
+                        <legend>
+                            Favorite color
+                        </legend>
+            
+                        <input type="radio" name="color" id="red">
+                        <label for="red">red</label>
+            
+                        <input type="radio" name="color" id="black">
+                        <label for="black">black</label>
+            
+                        <input type="radio" name="color" id="blue">
+                        <label for="blue">blue</label>
+                        <!-- same nae is needed for alernative choice -->
+                    </fieldset>
+                    <label for="choose a color"></label>
+                    <select name="color2">
+                        <option value="green">green</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                    </select>
+                    <input type="submit" value="PressMeToSend">
+                </form>
             </article>
         </Div>
 
@@ -188,14 +242,40 @@ MAIN CSS POSITIONING
 ------------------------------------------------------------- -->
             <article id="positioning">
                 <h2>CSS Positioning</h2>
+                <table>
+                    <tr>
+                        <th>positioning</th>
+                        <th>effect</th>
+                    </tr>
+                    <tr>
+                        <td>static</td>
+                        <td>is the default</td>
+                    </tr>
+                    <tr>
+                        <td>relative</td>
+                        <td>...to original posiiton, leaves Gap at original position</td>
+                    </tr>
+                    <tr>
+                        <td>absolute</td>
+                        <td>...to the latest parent with relative, atleat to the body, leaves no Gap</td>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td>... stayes at his place when scrolling</td>
+                    </tr>
+                    <tr>
+                        <td>sticky</td>
+                        <td>... scrolls to the position and stayes there when scrolling</td>
+                    </tr>
+                </table>
             </article>
 <!-- ------------------------------------------------------------
 MAIN CSS FLEX
 ------------------------------------------------------------- -->
             <article id="flex">
                 <h2>CSS Flex</h2>
+                <h3>display:flex, flex-wrap:wrap;</h3>
                 <div id="firstRow">
-                    <h3>display: flex, flex-wrap: wrap;</h3>
                     <article class="art1">1</article>
                     <article class="art2">2</article>
                     <article class="art3">3</article>
@@ -203,8 +283,8 @@ MAIN CSS FLEX
                     <article class="art5">5</article>
                     <article class="art6">6</article>
                 </div>
+                <h3>display:flex, flex-direction:row-reverse;</h3>
                 <div id="secondRow">
-                    <h3>display: flex, flex-direction: row-reverse;</h3>
                     <article class="art1">1</article>
                     <article class="art2">2</article>
                     <article class="art3">3</article>
@@ -212,8 +292,8 @@ MAIN CSS FLEX
                     <article class="art5">5</article>
                     <article class="art6">6</article>
                 </div>
+                <h3>display:flex, justify-content:space-between, align-items:center;</h3>
                 <div id=thirdRow>
-                    <h3>display:flex, justify-content: space-between, align-items: center;</h3>
                     <article class="art1">1</article>
                     <article class="art2">2</article>
                     <article class="art3">3</article>
@@ -228,8 +308,48 @@ MAIN CSS GRID
             <article id="grid">
                 <h2>CSS Grid</h2>
             </article>
-        </Div>
+        
+<!-- ------------------------------------------------------------
+MAIN CSS TOGGLE
+------------------------------------------------------------- -->
+            <article id="toggle">
+                <h2>Toggle</h2>
+                <input type="checkbox" name="" id="toggle2">
+                    <label for="toggle2" class="klickItemParent">
+                    <div class="klickItem"></div>
+                </label>
+            </article>
+        
+<!-- ------------------------------------------------------------
+MAIN CSS FONT-AWESOME
+------------------------------------------------------------- -->
+            <article id="fontAwesome">
+                <h2>font Awesome</h2>
+                <form action="">
+                    <h1>Login</h1>
+                    <label for="email">
+                        
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="@ your Email"><br>
+                    <label for="password">
+                        
+                    </label>
+                    <input type="password" name="password" id="password" 
+                    placeholder="&#xf023; Your Password"><br>
+                    <input id="submit" type="submit" value="Sign in">
+                </form>
+            </article>
 
+
+
+
+
+
+
+
+
+
+        </Div>
 <!-- ------------------------------------------------------------
 MAIN JAVASCRIPT BASICS
 ------------------------------------------------------------- -->
@@ -238,9 +358,7 @@ MAIN JAVASCRIPT BASICS
             <article>
                 <h2>JavaScript Basics</h2>
             </article>
-            <article>
-    
-            </article>
+            
         </Div>
     </main>
 <!-- ------------------------------------------------------------

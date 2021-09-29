@@ -80,8 +80,21 @@ h2{
     border: solid var(--color1);
     border-radius: 10px;
     padding: 10px;
-    margin: 10px 0 0 0 ;
-    
+    margin: 10px 0 0 0 ;  
+}
+
+.positioning{
+    display: flex;
+}
+
+.left{
+    width: 47%;
+    background-color: black;
+    color: greenyellow;
+}
+
+.right{
+    width: 47%;
 }
 
 /* ----------------------
@@ -178,8 +191,10 @@ HTML-TABLE
 /* ----------------------
 HTML-FORMS
 ------------------------- */
-
-
+#form input:focus{
+    border-color: rgb(253, 125, 189);
+    outline: none;
+}
 /* ----------------------
 -------------------------
 MAIN CSS
@@ -207,6 +222,7 @@ CSS-FLEX
     border: rgb(71, 71, 71) solid 5px;
     flex-wrap: wrap;
 }
+
 /* flex-direction:row (default), row-reverse, column, column-reverse */
 /* flex-wrap:nowrap (default), wrap, wrap-reverse*/
 /* justify-content: flex-start (default), flex-end, center, space-around, space-between */
@@ -232,7 +248,7 @@ like justify-content but for secondary axis for all lines*/
     height: 50px;
 }
 
-#flex article, h3{
+#flex article{
    width: calc(100%/4);
    height: 150px;
    font-weight: normal;
@@ -270,3 +286,75 @@ like justify-content but for secondary axis for all lines*/
 /* ----------------------
 CSS-GRID
 ------------------------- */
+
+/* ----------------------
+CSS-TOGGLE
+------------------------- */
+#toggle input{
+    display: none;
+}
+
+#toggle .klickItemParent{
+    width: 100px;
+    height: 40px;
+    background-color: lightgreen;
+    border-radius: 40px;
+    display: block;
+    border: solid rgb(114,114,114) 1px;
+    /* because its inline Element */
+    transition: 1s;
+}
+
+#toggle .klickItem{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(114, 114, 114);
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+
+#toggle input:checked + .klickItemParent{
+    /* "+" because its for the next sibling, not the child
+    "~" would be for for every sibling */
+    background-color: lightskyblue;
+}
+
+#toggle input:checked +.klickItemParent .klickItem{
+    background-color: black;
+    transform: translate(60px);
+}
+
+
+
+/* ----------------------
+CSS-FONT-AWESOME
+------------------------- */
+
+
+#fontAwesome #email{
+    border-bottom: green solid 5px;
+}
+#fontAwesome #password{
+    border-bottom: green solid 5px;
+}
+#fontAwesome #submit{
+    border: green solid 5px;
+    width: 453px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+#fontAwesome #submit:hover{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+#fontAwesome input{
+    background: transparent;
+    font-size: 2rem;
+}
+#fontAwesome input::placeholder{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif, "Font Awesome 5 Free";
+    font-weight: 900;
+}
